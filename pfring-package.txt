@@ -1,0 +1,16 @@
+Legend:
+    ==> : Depends
+    --> : Suggests
+
+Packages:
+
+	pfring
+		Compiled PF_RING kernel module (.ko).
+	pfring-src
+		Source code of the PF_RING kernel module.
+	libpfring ==> pfring
+		Compiled PF_RING user-space library (.so and .a files).
+	libpfring-dev ==> libpfring
+		Header files (.h) for the user-space library.
+	libpfring-doc --> libpfring
+		Compiled sample applications (pfcount, pfsend, etc.) and their source code.
